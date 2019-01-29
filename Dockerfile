@@ -7,9 +7,9 @@ RUN apt-get update && \
         make \
         libffi-dev \
         openssl \
-        openssl-dev \
         git \
         gnupg \
+	libssl-dev \
         gnupg-agent
 
 RUN mkdir -p /tmp \
