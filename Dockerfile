@@ -10,7 +10,9 @@ RUN apt-get update && \
         git \
         gnupg \
 	libssl-dev \
-        gnupg-agent
+        gnupg-agent \
+	expect \
+	expect-dev
 
 RUN mkdir -p /tmp \
     && cd /tmp \
