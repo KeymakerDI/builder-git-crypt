@@ -8,13 +8,15 @@ RUN apt-get update && \
         libffi-dev \
         openssl \
         git \
+        git-lfs \
         gnupg \
-	libssl-dev \
+	    libssl-dev \
         gnupg-agent \
-	expect \
-	expect-dev
+	    expect \
+	    expect-dev
 
 RUN mkdir -p /tmp \
+    && git-lfs install \
     && cd /tmp \
     && git clone https://github.com/AGWA/git-crypt.git \
     && cd git-crypt \

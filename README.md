@@ -8,7 +8,7 @@ initial version:
 bash, g++, make, libffi-dev, openssl, git, gnupg, libssl-dev, gnupg-agent
 
 Build
-docker build -t terjohan/builder-git-crypt .
+docker build -t builder-git-crypt .
 
 Usage
 The image is expected to be run inside a (build) pipeline, which should handle setting getting git-crypt and enabling user to send in GPG secret / public via pipeline job.
